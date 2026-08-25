@@ -1,0 +1,23 @@
+[workspace]
+resolver = "2"
+members = [
+    "crates/orbitrelay-core",
+    "crates/orbitrelay-protocol",
+    "crates/orbitrelay-runtime",
+    "crates/orbitrelay-sync",
+    "crates/orbitrelay-storage",
+    "crates/orbitrelay-node",
+    "crates/orbitrelay-server",
+]
+
+[workspace.package]
+version = "0.1.0-alpha"
+edition = "2021"
+
+[workspace.dependencies]
+orbitrelay-core = { path = "crates/orbitrelay-core" }
+orbitrelay-protocol = { path = "crates/orbitrelay-protocol" }
+orbitrelay-runtime = { path = "crates/orbitrelay-runtime" }
+orbitrelay-sync = { path = "crates/orbitrelay-sync" }
+orbitrelay-storage = { path = "crates/orbitrelay-storage" }
+orbitrelay-node = { path = "crates/orbitrelay-node" }
